@@ -16,3 +16,4 @@ mod 'apache',
 #  :git    => 'https://github.com/puppetlabs/puppetlabs-apache',
 #  :branch => 'docs_experiment'
 mod "puppetlabs/ntp",	'6.0.0'
+mod 'puppetlabs-mysql', '3.10.0'
