@@ -15,3 +15,4 @@ mod 'apache',
 #mod 'apache',
 #  :git    => 'https://github.com/puppetlabs/puppetlabs-apache',
 #  :branch => 'docs_experiment'
+mod "puppetlabs/ntp",	'6.0.0'
