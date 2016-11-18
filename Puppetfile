@@ -17,3 +17,5 @@ mod 'apache',
 #  :branch => 'docs_experiment'
 mod "puppetlabs/ntp",	'6.0.0'
 mod "puppetlabs-mysql", '3.10.0'
+
+mod " derdanne/nfs",	'1.0.1'
