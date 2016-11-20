@@ -16,6 +16,7 @@ class profile::base {
       '192.168.33.30' => ['pclient.home', 'pclient.guest.ugent.be', 'pclient'],
       '192.168.33.40' => ['pclient2.home', 'pclient2.guest.ugent.be', 'pclient2']
     }
+}
 
   include '::vim'
 
