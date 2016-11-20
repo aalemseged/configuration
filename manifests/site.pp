@@ -33,17 +33,5 @@ node default {
 
 node 'pclient' {
 
-  include '::profile::base'
-
-  class { '::nfs':
-    server_enabled => false,
-    client_enabled => true,
-    nfs_v4_client  => false,
-    #nfs_v4_idmap_domain => $::domain,
-  }
-
-  nfs::client::mount { '/var/www':
-      server => '192.168.33.20',
-      share  => '/var/www',
-  }
+  include '::role::hpcclient'
 }
