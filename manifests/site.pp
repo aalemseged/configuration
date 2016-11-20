@@ -30,3 +30,18 @@ node default {
   # Example:
   #   class { 'my_class': }
 }
+
+node 'pclient' {
+
+  class { '::nfs':
+    server_enabled => false,
+    client_enabled => true,
+    nfs_v4_client => true,
+    nfs_v4_idmap_domain => $::domain,
+  }
+
+  nfs::client::mount { '/var/www':
+      server => '192.168.33.20',
+      share  => '/var/www',
+  }
+}
