@@ -8,6 +8,6 @@ class profile::easybuildnfs {
 
   #nfs::client::mount { '/srv/software':
   #    server => '192.168.33.20',
-  #    share  => '/srv/easybuild',
+  #    share  => '/home/hpcadmin/software/',
   #}
 }

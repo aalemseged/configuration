@@ -13,4 +13,5 @@ class profile::base {
 
   # DNS lookups
 
+  # user hpcadmin
 }
