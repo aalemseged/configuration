@@ -28,6 +28,6 @@ mod "hosts",
   :commit => 'b94329c3b9eb85c1d20dfc448c2628f4fc508077'
 
 # This modules is the dependency for hosts module
-mod "puppi"
+mod "puppi",
   :git	  => 'https://github.com/example42/puppi',
   :commit => 'd28b7acd43c3282545dd07cbf69ae46ef4359161'
