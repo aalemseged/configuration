@@ -26,3 +26,8 @@ mod "puppet/extlib",    '1.0.0'
 mod "hosts",
   :git	  => 'https://github.com/example42/puppet-hosts',
   :commit => 'b94329c3b9eb85c1d20dfc448c2628f4fc508077'
+
+# This modules is the dependency for hosts module
+mod "puppi"
+  :git	  => 'https://github.com/example42/puppi',
+  :commit => 'd28b7acd43c3282545dd07cbf69ae46ef4359161'
