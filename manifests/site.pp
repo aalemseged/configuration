@@ -36,8 +36,8 @@ node 'pclient' {
   class { '::nfs':
     server_enabled => false,
     client_enabled => true,
-    nfs_v4_client => true,
-    nfs_v4_idmap_domain => $::domain,
+    nfs_v4_client  => false,
+    #nfs_v4_idmap_domain => $::domain,
   }
 
   nfs::client::mount { '/var/www':
