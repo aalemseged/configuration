@@ -33,9 +33,7 @@ node default {
 
 node 'pclient' {
 
-  class { '::ntp':
-    servers => [ 'ntp1.corp.com', 'ntp2.corp.com' ],
-  }
+  include '::profile::base'
 
   class { '::nfs':
     server_enabled => false,
