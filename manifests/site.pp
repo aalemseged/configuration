@@ -42,6 +42,6 @@ node 'pclient' {
 
   nfs::client::mount { '/var/www':
       server => '192.168.33.20',
-      share  => 'var/www',
+      share  => '/var/www',
   }
 }
