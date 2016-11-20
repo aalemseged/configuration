@@ -22,3 +22,7 @@ mod "derdanne/nfs",	'1.0.1'
 mod "rgevaert/mysql",	'0.0.2'
 mod "dhoppe/vim",	'1.4.0'
 mod "puppet/extlib",    '1.0.0'
+# Module for /etc/hosts file
+mod "hosts",
+  :git	  => 'https://github.com/example42/puppet-hosts',
+  :commit => 'b94329c3b9eb85c1d20dfc448c2628f4fc508077'
