@@ -33,6 +33,8 @@ node default {
 
 node 'pclient' {
 
+  include '::ntp'
+
   class { '::nfs':
     server_enabled => false,
     client_enabled => true,
