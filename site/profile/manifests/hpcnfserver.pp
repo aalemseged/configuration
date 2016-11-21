@@ -7,7 +7,8 @@ class profile::hpcnfserver {
   }
 
   class { '::nfs':
-    server_enabled => true  
+    server_enabled => true,
+    nfs_v4	   => false,  
   }
 
   nfs::server::export { '/home/vagrant/software/':
