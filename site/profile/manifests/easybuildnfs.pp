@@ -6,7 +6,7 @@ class profile::easybuildnfs {
     nfs_v4_client  => false,
   }
 
-  nfs::client::mount { '/srv/software':
+  nfs::client::mount { '/home/hpcadmin/':
       server => '192.168.33.20',
       share  => '/home/vagrant/software/',
   }
