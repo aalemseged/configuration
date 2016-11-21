@@ -17,6 +17,8 @@ class profile::base {
 
   # apt repositories 
 
+  include '::apt'
+
   # DNS lookups
 
   # user hpcadmin
