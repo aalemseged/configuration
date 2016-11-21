@@ -7,9 +7,7 @@ class profile::base {
     servers => [ 'ntp1.corp.com', 'ntp2.corp.com' ],
   }
 
-  class { '::hosts':
-    dynamic_mode => true,   
-  }
+  class { '::hosts':}
 
   include '::vim'
 
