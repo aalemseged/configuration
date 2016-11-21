@@ -36,7 +36,7 @@ node 'pclient', 'pclient2' {
   include '::role::hpcclient'
 }
 
-#node 'pmaster' {
-#
-#  include '::role::hpcsoftware'
-#}
+node 'pmaster' {
+
+  include '::role::hpcsoftware'
+}
