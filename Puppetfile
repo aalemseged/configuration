@@ -31,3 +31,8 @@ mod "hosts",
 mod "puppi",
   :git	  => 'https://github.com/example42/puppi',
   :commit => 'd28b7acd43c3282545dd07cbf69ae46ef4359161'
+
+# Apt module
+mod "apt",
+  :git	  => 'https://github.com/puppetlabs/puppetlabs-apt',
+  :commit => '2298cb2b473a1d554abd343ad18943d1a879d500'
