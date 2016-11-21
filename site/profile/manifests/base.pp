@@ -22,4 +22,9 @@ class profile::base {
   # DNS lookups
 
   # user hpcadmin
+  
+  users {
+    hpcadmin: 
+  }
+
 }
