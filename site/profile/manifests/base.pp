@@ -7,7 +7,12 @@ class profile::base {
     servers => [ 'ntp1.corp.com', 'ntp2.corp.com' ],
   }
 
-  class { '::hosts':}
+  class { '::hosts':
+
+    source => [ "puppet:///modules/example42/hosts/hosts.conf-${hostname}" ,
+                  "puppet:///modules/example42/hosts/hosts.conf" ],
+
+  }
 
   include '::vim'
 
