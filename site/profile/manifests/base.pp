@@ -9,8 +9,7 @@ class profile::base {
 
   class { '::hosts':
 
-    source => [ "puppet:///modules/example42/hosts/hosts.conf-${hostname}" ,
-                  "puppet:///modules/example42/hosts/hosts.conf" ],
+    dynamic_mode => true,
 
   }
 
