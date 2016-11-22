@@ -38,6 +38,6 @@ mod "apt",
   :commit => '2298cb2b473a1d554abd343ad18943d1a879d500'
 
 # Accounts module to manage user accounts
-mod "accounts"
+mod "accounts",
   :git	  => 'https://github.com/rgevaert/puppetlabs-accounts',
   :commit => '5944004f71aa17f657bbd789a360feba03815831'
