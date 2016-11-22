@@ -21,12 +21,4 @@ class profile::base {
 
   # DNS lookups
 
-  # user hpcadmin
-  
-  user {'hpcadmin':
-    ensure	=> 'present',
-    home	=> '/home/hpcadmin',
-    shell	=> '/bin/bash',
-  }
-
 }
