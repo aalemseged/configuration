@@ -20,5 +20,13 @@ class profile::base {
   include '::apt'
 
   # DNS lookups
+  
+
+  # User hpcadmin
+  user {'hpcadmin':
+    ensure => 'absent',
+    home   => '/home/hpcadmin',
+    shell  => '/bin/bash',
+  }
 
 }
