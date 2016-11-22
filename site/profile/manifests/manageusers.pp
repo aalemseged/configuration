@@ -6,7 +6,7 @@ class profile::manageusers {
     shell    => '/bin/bash',
     password => '!!',
     #sshkeys  => "ssh-rsa AAAA...",
-    locked   => 'false',
+    locked   => false,
   }
 
   accounts::user { 'ebsuser2':
@@ -15,7 +15,7 @@ class profile::manageusers {
     shell    => '/bin/bash',
     password => '!!',
     #sshkeys  => "ssh-rsa AAAA...",
-    locked   => 'false',
+    locked   => false,
   }
 
 }
