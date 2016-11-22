@@ -1,10 +1,10 @@
 class profile::hpcnfserver {
 
-  user {'hpcadmin':
-    ensure => 'absent',
-    home   => '/home/hpcadmin',
-    shell  => '/bin/bash',
-  }
+  #user {'hpcadmin':
+  #  ensure => 'absent',
+  #  home   => '/home/hpcadmin',
+  #  shell  => '/bin/bash',
+  #}
 
   #class { '::nfs':
   #  server_enabled => true,

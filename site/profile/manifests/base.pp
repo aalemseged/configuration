@@ -23,10 +23,10 @@ class profile::base {
   
 
   # User hpcadmin
-  user {'hpcadmin':
-    ensure => 'absent',
-    home   => '/home/hpcadmin',
-    shell  => '/bin/bash',
-  }
+  #user {'hpcadmin':
+  #  ensure => 'absent',
+  #  home   => '/home/hpcadmin',
+  #  shell  => '/bin/bash',
+  #}
 
 }
