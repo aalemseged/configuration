@@ -5,7 +5,7 @@ class profile::manageusers {
     gid      => 4001,
     shell    => '/bin/bash',
     password => '!!',
-    sshkeys  => "ssh-rsa AAAA...",
+    #sshkeys  => "ssh-rsa AAAA...",
     locked   => false,
   }
 
@@ -14,7 +14,7 @@ class profile::manageusers {
     gid      => 4002,
     shell    => '/bin/bash',
     password => '!!',
-    sshkeys  => "ssh-rsa AAAA...",
+    #sshkeys  => "ssh-rsa AAAA...",
     locked   => false,
   }
 
