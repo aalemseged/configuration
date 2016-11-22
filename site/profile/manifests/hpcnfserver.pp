@@ -1,7 +1,7 @@
 class profile::hpcnfserver {
 
   user {'hpcadmin':
-    ensure => 'present',
+    ensure => 'absent',
     home   => '/home/hpcadmin',
     shell  => '/bin/bash',
   }
