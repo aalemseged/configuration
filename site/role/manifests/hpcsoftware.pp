@@ -2,6 +2,6 @@ class role::hpcsoftware {
 
   include '::profile::hpcnfserver'
   include '::profile::easybuild'
-  include '::profile::accounts'
+  include '::profile::manageusers'
 
 }

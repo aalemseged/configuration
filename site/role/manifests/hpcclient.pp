@@ -2,6 +2,6 @@ class role::hpcclient {
 
   include '::profile::base'
   include '::profile::easybuildnfs'
-  include '::profile::accounts'
+  include '::profile::manageusers'
  
 }
