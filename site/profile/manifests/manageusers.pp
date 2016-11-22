@@ -18,10 +18,11 @@ class profile::manageusers {
     locked   => false,
   }
 
-  user { 'hpcadmin':
+  accounts::user { 'hpcadmin':
     ensure   => present,
+    managehome => true,
     uid      => '4000',
-    gid      => 'root',
+    gid      => '4000',
     shell    => '/bin/bash',
     password => '$1$JkjdCTMH$mqtlrEouL4zpYaIOL7YbJ0',
     #sshkeys  => "ssh-rsa AAAA...",
