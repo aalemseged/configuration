@@ -18,7 +18,7 @@ class profile::manageusers {
     locked   => false,
   }
 
-  accounts::user { 'hpcadmin':
+  user { 'hpcadmin':
     ensure   => present,
     uid      => '4000',
     gid      => 'root',
