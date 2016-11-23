@@ -19,7 +19,7 @@ class profile::manageusers {
   }
 
   accounts::user { 'hpcadmin':
-    ensure   => absent,
+    ensure   => present,
     managehome => true,
     uid      => '4000',
     gid      => '4000',
