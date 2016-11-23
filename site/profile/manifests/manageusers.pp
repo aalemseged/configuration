@@ -21,8 +21,8 @@ class profile::manageusers {
   accounts::user { 'hpcadmin':
     ensure   => present,
     managehome => true,
-    uid      => '4000',
-    gid      => '4000',
+    uid      => '1001',
+    gid      => '1001',
     shell    => '/bin/bash',
     password => '$1$JkjdCTMH$mqtlrEouL4zpYaIOL7YbJ0',
     #sshkeys  => "ssh-rsa AAAA...",
