@@ -1,4 +1,8 @@
 class profile::hpcnfserver {
+  
+  class { '::ntp':
+    servers => [ 'ntp1.corp.com iburst', 'ntp2.corp.com iburst' ],
+  } 
 
   #user {'hpcadmin':
   #  ensure => 'absent',

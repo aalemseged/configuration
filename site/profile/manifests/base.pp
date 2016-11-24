@@ -4,7 +4,7 @@ class profile::base {
 
   # ju ntp server
   class { '::ntp':
-    servers => [ 'ntp1.corp.com', 'ntp2.corp.com' ],
+    servers => [ 'pmaster', 'pmaster.home', 'pmaster.wireless.ugent.be' ],
   }
 
   class { '::hosts':
