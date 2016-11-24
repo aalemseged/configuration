@@ -1,8 +1,12 @@
 class profile::manageusers {
 
-  accounts::user { 'ebsuser1': }
+  accounts::user { 'hpcuser1': 
 
-  accounts::user { 'ebsuser2': }
+    
+
+  }
+
+  accounts::user { 'hpcuser2': }
 
   accounts::user { 'hpcadmin':
     ensure   => present,
